@@ -38,12 +38,13 @@ img {
 }
 
 .card {
-	flex: 1 1 320px;
-	border: 1px solid darkorange;
-	border-radius: .5rem;
-	background-color: papayawhip;
-	padding: 1rem;
-}
+            flex: 1 1 320px;
+            border: 1px solid darkorange;
+            border-radius: .5rem;
+            background-color: papayawhip;
+            padding: 1rem;
+            container: card / inline-size;
+        }
 
 .content-wrapper {
 	display: flex;
@@ -63,14 +64,15 @@ img {
 }
 
 @container card (inline-size < 400px) {
-  .content-wrapper {
-    flex-direction: column;
-  }
+            .content-wrapper {
+                flex-direction: column;
+            }
+
 }
 @container card (inline-size > 540px) {
-  h2 {
-    font-size: 1.5rem;
-  }
+                h2 {
+                    font-size: 1.5rem;
+                }
 }
 @container card (inline-size > 540px) {
   h2 {
