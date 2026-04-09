@@ -53,7 +53,7 @@ img {
 .description > * {
 	margin: .25rem 1rem;
 }
-.item {
+.card {
   flex: 1 1 320px;
   border: 1px solid darkorange;
   border-radius: .5rem;
